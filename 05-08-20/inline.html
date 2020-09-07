@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        span.a {
+            display: inline;
+            /* the default for span */
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+        
+        span.b {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+        
+        span.c {
+            display: block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The display Property</h1>
+    <!--display inline-->
+    <h2>display: inline</h2>
+    <div>In Inline css we cannot give any inline padding and margin. <span class="a">sumant</span> <span class="a">kumar</span>. </div>
+
+    <h2>display: inline-block</h2>
+    <div>In this we give height and width <span class="b">sumant</span> <span class="b">kumar</span> </div>
+
+    <h2>display: block</h2>
+    <div>In this we give width and height but horizontal ways. Aliquam erat volutpat. <span class="c">sumant</span>
+        <span class="c">kumar</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+</body>
+
+</html>
