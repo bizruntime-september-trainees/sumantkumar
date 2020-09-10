@@ -1,0 +1,23 @@
+<!--implemenation of exception handling in javascript-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Error Handling</h2>
+    <p id="demo"></p>
+
+    <script>
+        try {
+            /**
+             * add alert message is not found so it will ecxute the catch block
+             */
+            adddlert("Welcome guest!");
+        } catch (err) {
+            document.getElementById("demo").innerHTML = err.message;
+        }
+    </script>
+
+</body>
+
+</html>

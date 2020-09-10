@@ -1,0 +1,28 @@
+<!--Implemenation of localStroage-->
+<html>
+
+<head></head>
+<title></title>
+<h1>Implementaion of localStroage</h1>
+
+<body>
+    <div id="result">
+        <script>
+            if (typeof(Storage) != "undefind") {
+                localStorage.setItem("lastname", "test");
+                /**
+                 * it set the data in the form of key and values pairs  
+                 */
+                document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+                /**
+                 * setting the value of key in localstorage
+                 */
+
+            } else {
+                document.getElementById("result").innerHTML = "sorry browser is not supported";
+            }
+        </script>
+    </div>
+</body>
+
+</html>

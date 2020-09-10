@@ -1,0 +1,32 @@
+<!--exception handling in javasript-->
+<!DOCTYPE html>
+
+<head></head>
+<title>Exception Handing</title>
+
+<body>
+    <h1>Exception Handling </h1>
+    <script>
+        /**
+         * code which cause exception should place in try block
+         */
+        try {
+            add()
+            document.write("skipped code");
+        } catch (e) {
+            /**
+             * catch block handle which occur in try block and run the program smoontly
+             */
+            document.write("message: " + e.message + "<br>");
+            document.write("message:" + e.name + "<br>");
+            document.write("message:" + e.stack + "<br>");
+        } finally {
+            /**
+             * finally block always excuted whethet ecxeption occur or not
+             */
+            document.write("get excuted whether block is running or not")
+        }
+    </script>
+</body>
+
+</html>
