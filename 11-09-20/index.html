@@ -1,0 +1,70 @@
+<!--implemenation of conatiner,conatiner-fuild,table,img in bootstrap-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--container build is used for full length page,no margin -->
+    <div class="container-fluid">
+        <!--div conatin is used when there is margin required -->
+        <!-- <div class ="conatiner"></div>-->
+        <h1>Implemation of Table, Color and Image in Bootstrap</h1>
+        <p>In this example we Implemated the color,image,imaga tyes table,container,conatiner-fuild, </p>
+        <!--rounded-circle type image-->
+        <img src="sumant.png" class="rounded-circle" alt="Cinque Terre" width="50%" height="236">
+        <!--roundedtypes image-->
+        <img src="bootstrap.png" class="rounded" alt="Cinque Terre" width="49.5%" height="236">
+        <!--implemation of thumbnail in bootstrap-->
+        <!--  <img src="bootstrap.png" class = Thumbnail:" alt="Cinque Terre" width="49.5%" height="236">-->
+        <!--implemenation of table in bootstrap-->
+        <table class="table">
+            <!--heading of table-->
+            <thead>
+                <!--row in table-->
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <!--table body-->
+            <tbody>
+                <tr>
+                    <td>Default</td>
+                    <td>sumant kumar</td>
+                    <td>sumantkumar@gmail.com</td>
+                </tr>
+                <!--implemenation of color-->
+                <tr class="table-primary">
+                    <td>Primary</td>
+                    <td>preetikumari</td>
+                    <td>preeti@gmail.com</td>
+                </tr>
+                <!--implemenation of color-->
+                <tr class="table-success">
+                    <td>Success</td>
+                    <td>saurav</td>
+                    <td>saurav@gmail.com</td>
+                </tr>
+                <!--implemenation of color-->
+                <tr class="table-danger">
+                    <td>Danger</td>
+                    <td>ravi</td>
+                    <td>raviyadav@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--closing table,tablebody,table row-->
+    </div>
+</body>
+
+</html>
