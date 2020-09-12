@@ -1,0 +1,76 @@
+<!--implementation of checbox,select,comment,button,selectlist,date in the forms-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-success">
+            <h1>Please Enter Your Details</h1>
+        </div>
+        <div class="form-group">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <form action="/action_page.php">
+            <label for="birthday">Birthday:</label><br>
+            <input type="date" id="birthday" name="birthday">
+            <input type="submit">
+        </form>
+        <label for="Skill">Skills:</label>
+        <br>
+        <!--checkbox in bootstrap-->
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">JAva
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">PYTHON
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">JAVASCRIPT
+            </label>
+        </div>
+        <br>
+        <!--select list examples-->
+        <div class="form-group">
+            <label for="sel1">Passout Year:</label>
+            <select class="form-control" id="sel1">
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+            </select>
+        </div>
+        <!--choose file exampels-->
+        <div class="form-group">
+            <label for="file">Resume:</label>
+            <input type="file" class="form-control-file border" name="file">
+        </div>
+        <!--commentin bootstraps-->
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</body>
+
+</html>
