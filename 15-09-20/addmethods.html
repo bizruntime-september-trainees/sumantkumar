@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //adding text to before 
+            $("#btn1").click(function() {
+                $("p").prepend("<b>Prepended text</b>. ");
+            });
+            //adding list items before
+            $("#btn2").click(function() {
+                $("ol").prepend("<li>Prepended item</li>");
+            });
+            //adding text after the end
+            $("#btn3").click(function() {
+                $("p").append("<b>append text</b>. ");
+            });
+            //adding list after the end
+            $("#btn4").click(function() {
+                $("ol").append("<b>append items</b>. ");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Impementation of Set Methods</h1>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+
+    <button id="btn1">Prepend text</button>
+    <button id="btn2">Prepend list item</button>
+    <button id="btn3">append text</button>
+    <button id="btn4">append list item</button>
+</body>
+
+</html>

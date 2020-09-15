@@ -1,0 +1,38 @@
+<!--implementaion of set and get methods in jquery-->
+<!DOCTYPE html>
+<html>
+
+<head></head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        //adding content in text format
+        $("#btn1").click(function() {
+            $("#test1").text("Hello How are you");
+        });
+        //adding content in html format
+        $("#btn2").click(function() {
+            $("#test2").html("<b>I am fine</b>");
+        });
+        //setting any customize data to existing values
+        $("#btn3").click(function() {
+            $("#test3").val("I am too fine");
+        });
+    });
+</script>
+</head>
+
+<body>
+    <h1>Implementaion of set methods in jquery</h1>
+    <p id="test1">By clicking ON Set Text you set text</p>
+    <p id="test2">By clicking ON Set HTML you set Html</p>
+
+    <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+
+</body>
+
+</html>

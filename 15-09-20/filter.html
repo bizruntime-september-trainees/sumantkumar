@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //first method is used for selecting first paragraph 
+            $("div").first().css("background-color", "yellow");
+            //last method is used for selecting last paragraph
+            $("div").last().css("background-color", "yellow");
+            //.eq method is used to target any paragraph heading,list,unorderlist  between top and bottom
+            $("div").eq(1).css("background-color", "red");
+            //filter methods is used to add color any class id
+            $("p").filter('.intro').css("background-color", "pink");
+            $("p").filter('.not').css("background-color", "pink");
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>Filter methods in Jquery</h1>
+
+    <p>This is a paragraph.</p>
+
+    <div style="border: 1px solid black;">
+        <p>A paragraph in a div.</p>
+        <p>Another paragraph in a div.</p>
+    </div>
+    <br>
+    <p class="intro">I love Duckburg.</p>
+    <br>
+    <div style="border: 1px solid black;">
+        <p>A paragraph in another div.</p>
+        <p>Another paragraph in another div.</p>
+    </div>
+    <br>
+
+    <div style="border: 1px solid black;">
+        <p>A paragraph in another div.</p>
+        <p>Another paragraph in another div.</p>
+    </div>
+
+</body>
+
+</html>
