@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>jquery -Learning</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">click me to Toggle</button><br><br>
+    <!-- <button class="btn2">click me to hide</button><br><br>-->
+    <div class="box">
+
+    </div>
+
+    <script type="text/javascript">
+        //document stands for any html elememt it is selelctor
+        //ready is action perform 
+        $(document).ready(function() {
+
+            //code to show color
+            // $('.btn').click(function() {
+            //     $('.box').show();
+            // });
+            // code to hide color
+            // $('.btn2').click(function() {
+            //    $('.box').hide();
+            //});
+
+            // code to show and hide in alternate manner
+            $('.btn').click(function() {
+                $('.box').toggle();
+            });
+
+        });
+    </script>
+</body>
+
+</html>
