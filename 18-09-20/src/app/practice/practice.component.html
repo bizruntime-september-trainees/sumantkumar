@@ -1,0 +1,32 @@
+<h1>welcome to my second components</h1>
+<h1>
+    ng style examples
+</h1>
+<ul *ngFor="let person of people">
+    <li [ngStyle]="{'color':getcolor(person.country)}">
+        {{person.name}}--{{person.country}}
+    </li>
+</ul>
+<h2>Attribute Binding</h2>
+<table [attr.border]="bdr" height="200" width="200">
+    <tr>
+        <td [attr.colspan]="cols">students details</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>NAME</td>
+        <td>Class</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>sumant</td>
+        <td>Ionic</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>saurav</td>
+        <td>electron</td>
+    </tr>
+</table>
+<h1>event binding</h1>
+<button (click)="showdata()">show</button>

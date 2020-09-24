@@ -1,0 +1,26 @@
+<h1> {{title}}
+</h1>
+<h1>Implementation of Property binding</h1>
+<span [innerHTML]='title'></span>
+<img [src]="'https://angular.io/assets/images/logos/angular/angular.svg'" [height]="200">
+<!-- <table>
+    <tr *ngFor="let s of students:let i=index">
+        <td>{{i+1}}</td>
+        <td>{{s.studentid}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.gender}}</td>
+        <td>{{s.age}}</td>
+        <td>{{s.course}}</td>
+    </tr>
+</table> -->
+<h2>Grouping By Examples</h2>
+<ul *ngFor="let group of Countrydetails">
+    <li>{{group.country}}</li>
+
+    <ul>
+        <li *ngFor="let person of group.people">
+            {{person.name}}
+        </li>
+    </ul>
+</ul>
+<app-practice></app-practice>

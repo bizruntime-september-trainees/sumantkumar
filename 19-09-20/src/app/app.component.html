@@ -1,0 +1,31 @@
+<div style="text-align: center;">
+    <h1>{{title}}</h1>
+</div>
+<h2>This is Components Examples</h2>
+<!--implelmention of structral directives-->
+<div *ngIf="checkngif">This is ngif Examples</div>
+<!--implelmention of components directive-->
+<button (click)="btnclick()">Click me</button>
+<p [ngStyle]="{'color':'red'}">this is Attribute directive</p>
+<!--implemenation of switch case-->
+<h2>Using Ng switch</h2>
+<select (change)="setvalue($event)">
+  <option value="">--select--</option>
+  <option value="one">one</option>
+  <option value="two">two</option>
+  <option value="three">three</option>
+  <option value="four">another</option>
+</select>
+<div [ngSwitch]="choose">
+    <h3 *ngSwitchCase="'one'">first</h3>
+    <h3 *ngSwitchCase="'two'">second</h3>
+    <h3 *ngSwitchCase="'three'">third</h3>
+    <h3 *ngSwitchCase="'four'">default</h3>
+
+</div>
+<ul>
+    <li *ngFor="let student of Students">
+        {{student.name}}
+    </li>
+</ul>
+<router-outlet></router-outlet>
