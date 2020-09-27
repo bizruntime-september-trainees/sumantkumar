@@ -1,0 +1,7 @@
+{
+  "name": "unapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
